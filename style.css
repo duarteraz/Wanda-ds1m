@@ -9,7 +9,7 @@
     }
 
     .logo{
-        height: 150px;
+        height: 120px;
     
     }
     
@@ -25,7 +25,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
     }
     
 
@@ -52,23 +52,26 @@
    
 
     .curiosidades { 
-        font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
-            font-weight:900 px;
+        font-family: 'Times New Roman', Times, serif;;
+        font-size: 20px;
             color: rgb(255, 255, 255);
-            width: 1000px;
-            text-align: initial;
+           width: 800px;
+            text-align:justify;
+            margin-top: 20px;
     }
         
-
+    
     .foto-wanda {
-        width: 500x;
+        width: 900px;
+
     }
     
      .feiticeira-escarlate{
         width: 100px;
         background-color: black;
     }
+    
+
     
     footer {
 
@@ -77,9 +80,35 @@
         align-items: flex-end;
         font-size: 1em;
         font-family: 'Times New Roman', Times, serif;
-        height: 150px;
+        height: 20px;
         width: 100%;
         background-color: black ;
         color: darkred;
 
+    }
+
+    
+    @media (max-width: 640px) {
+        .logo {
+            width: 35vw;
+            transform: translate(-50%/-50%);
+        }
+        .foto-wanda{
+           width: 90vw;
+           transform: translate(-50%/-50%);
+    
+        }
+
+        .curiosidades {
+            
+                grid-row: 2/3;
+                grid-column: 1/-1;
+                place-self: center ;
+                text-align: center;
+        
+        }
+
+        .action {
+            width: 100%;
+        }
     }
